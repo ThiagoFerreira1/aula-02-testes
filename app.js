@@ -12,7 +12,6 @@ app.get("/soma", (req, res) => {
     const a = Number(req.query.a);
     const b = Number(req.query.b);
 
-    let a = 1
 
     const resultado = a + b;
 
