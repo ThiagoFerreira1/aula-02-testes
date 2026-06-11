@@ -15,7 +15,7 @@ describe("Testes da API", () => {
             .get("/soma?a=2&b=3");
 
         expect(response.statusCode).toBe(200);
-        expect(response.body.resultado).toBe(4);
+        expect(response.body.resultado).toBe(5);
     });
 
     // TESTE COM FALHA PROPOSITAL
@@ -23,7 +23,7 @@ describe("Testes da API", () => {
         const response = await request(app)
             .get("/soma?a=2&b=2");
 
-        expect(response.body.resultado).toBe(5);
+        expect(response.body.resultado).toBe(4);
     });
 
 });
